@@ -13,7 +13,7 @@ class Motorbike extends Vehicle {
   topSpeed: number;
   wheels: Wheel[];
 
-  // TODO: Create a constructor that accepts the properties of the Motorbike class
+  // TCreate a constructor that accepts the properties of the Motorbike class
   constructor(
       vin: string,
       color: string,
@@ -24,10 +24,10 @@ class Motorbike extends Vehicle {
       topSpeed: number,
       wheels: Wheel[] // Accept wheels as a parameter
   ) {
-      // TODO: Call the constructor of the parent class, Vehicle
+      // Call the constructor of the parent class, Vehicle
       super(); // Call the parent constructor
 
-      // TODO: Initialize the properties of the Motorbike class
+      // Initialize the properties of the Motorbike class
       this.vin = vin;
       this.color = color;
       this.make = make;
@@ -36,7 +36,7 @@ class Motorbike extends Vehicle {
       this.weight = weight;
       this.topSpeed = topSpeed;
 
-      // TODO: Check if the wheels array has 2 elements and create 2 new default Wheel objects if it does not
+      // Check if the wheels array has 2 elements and create 2 new default Wheel objects if it does not
       if (wheels.length !== 2) {
           // Create default Wheel objects if the wheels array is not valid
           this.wheels = [

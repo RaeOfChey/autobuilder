@@ -19,7 +19,7 @@ const truck1 = new Truck(
   2021,
   5000,
   120,
-  [], // Default wheels, you can customize if necessary
+  [], // Ensure that this is a Wheel[] type
   10000 // Payload capacity
 );
 

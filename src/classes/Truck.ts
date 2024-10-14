@@ -7,7 +7,6 @@ import AbleToTow from '../interfaces/AbleToTow.js';
 
 // The Truck class should extend the Vehicle class and should implement the AbleToTow interface
 class Truck extends Vehicle implements AbleToTow {
-  // Declare properties of the Truck class
   vin: string;
   color: string;
   make: string;
@@ -15,16 +14,31 @@ class Truck extends Vehicle implements AbleToTow {
   year: number;
   weight: number;
   topSpeed: number;
-  wheels: Wheel[];
-  towingCapacity;
+  wheels: Wheel[]; // This expects an array of Wheel objects
+  towingCapacity: number;
 
   // Create a constructor that accepts the properties of the Truck class
-  constructor(vin, color, make, model, year, weight, topSpeed, towingCapacity, wheels) {
+  constructor(
+    vin: string,
+    color: string,
+    make: string,
+    model: string,
+    year: number,
+    weight: number,
+    topSpeed: number,
+    wheels: Wheel[], // Ensure this is an array of Wheel
+    towingCapacity: number // Ensure this is a number
+  ) {
     // Call the constructor of the parent class, Vehicle
-    super(vin, color, make, model, year, weight);
-
-    // Initialize the properties of the Truck class
+    super(); // Call the parent constructor if needed
+    this.vin = vin;
+    this.color = color;
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.weight = weight;
     this.topSpeed = topSpeed;
+    this.wheels = wheels;
     this.towingCapacity = towingCapacity;
 
     // Check if the wheels array has 4 elements and create 4 new default Wheel objects if it does not

@@ -12,7 +12,7 @@ class Cli {
   selectedVehicleVin: string | undefined;
   exit: boolean = false;
 
-  // TODO: Update the constructor to accept Truck and Motorbike objects as well
+  // Update the constructor to accept Truck and Motorbike objects as well
   constructor(vehicles: (Car | Truck | Motorbike)[]) {
     this.vehicles = vehicles;
   }
@@ -173,11 +173,33 @@ class Cli {
         },
         {
           type: 'input',
-          name: 'wheels',
-          message: 'Enter Number of Wheels',
+          name: 'frontWheelDiameter',
+          message: 'Enter Front Wheel Diameter',
+        },
+        {
+          type: 'input',
+          name: 'frontWheelBrand',
+          message: 'Enter Front Wheel Brand',
+        },
+        {
+          type: 'input',
+          name: 'rearWheelDiameter',
+          message: 'Enter Rear Wheel Diameter',
+        },
+        {
+          type: 'input',
+          name: 'rearWheelBrand',
+          message: 'Enter Rear Wheel Brand',
         },
       ])
       .then((answers) => {
+        // Create wheel objects using the diameter and brand from the user input
+        const frontWheel = new Wheel(parseInt(answers.frontWheelDiameter), answers.frontWheelBrand);
+        const rearWheel = new Wheel(parseInt(answers.rearWheelDiameter), answers.rearWheelBrand);
+        
+        // Create an array of wheels
+        const wheels: Wheel[] = [frontWheel, rearWheel];
+        
         // Use the answers object to pass the required properties to the Truck constructor
         const truck = new Truck(
           Cli.generateVin(),
@@ -187,17 +209,19 @@ class Cli {
           parseInt(answers.year),
           parseInt(answers.weight),
           parseInt(answers.topSpeed),
-          parseInt(answers.towingCapacity),
-          parseInt(answers.wheels),
+          wheels, 
+          parseInt(answers.towingCapacity) 
         );
-        // push the truck to the vehicles array
+
+        // Push the truck to the vehicles array
         this.vehicles.push(truck);
-        // set the selectedVehicleVin to the vin of the truck
+        // Set the selectedVehicleVin to the vin of the truck
         this.selectedVehicleVin = truck.vin;
-        // perform actions on the truck
+        // Perform actions on the truck
         this.performActions();
       });
-  }
+}
+
 
   // method to create a motorbike
   createMotorbike(): void {
