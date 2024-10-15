@@ -32,6 +32,8 @@ The following prompts will appear when creating a car:
 - Enter Weight
 - Enter Top Speed
 
+
+
 Creating a Truck
 When creating a truck, these prompts will appear:
 - Enter Color
@@ -57,7 +59,7 @@ For a motorbike, these prompts will appear:
 
 ## Walkthrough Video
 
-A complete walkthrough video demonstrating the application, its functionality, and the process of invoking it from the command line can be found at the following link:
+A complete walkthrough video demonstrating the application, its functionality, and the process of invoking it from the command line can be found at the following link: https://drive.google.com/file/d/1zsEq169WqMsV-PPpGYPn06OikJMMa5jh/view?usp=sharing
 
 ## License
 
