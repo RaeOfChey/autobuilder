@@ -69,15 +69,11 @@ This project is licensed under the MIT License, which allows you to freely use, 
 ## Contributing
 Contributions are welcome!  If you'd like to contribute to this project, follow the steps below.
 
-Step 1: Fork the repository.
-
-Step 2: Create a feature branch: git checkout -b feature/new-feature
-
-Step 3: Commit your changes: git commit -m "Add new feature"
-
-Step 4: Push to the branch: git push origin feature/new-feature
-
-Step 5: Open a pull request.
+- Step 1: Fork the repository.
+- Step 2: Create a feature branch: git checkout -b feature/new-feature
+- Step 3: Commit your changes: git commit -m "Add new feature"
+- Step 4: Push to the branch: git push origin feature/new-feature
+- Step 5: Open a pull request.
 
 ## Tests
 Currently, this project does not have any automated tests. However, if you'd like to add tests, feel free to contribute! You can set up testing using a framework like Mocha or Jest.
