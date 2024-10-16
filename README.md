@@ -68,7 +68,7 @@ For a motorbike, these prompts will appear:
 - Enter Top Speed
 
 ## Walkthrough
-A complete walkthrough video demonstrating the application, its functionality, and the process of invoking it from the command line can be found at the following link: https://drive.google.com/file/d/1zsEq169WqMsV-PPpGYPn06OikJMMa5jh/view?usp=sharing
+A complete walkthrough video demonstrating the application, its functionality, and the process of invoking it from the command line can be found at the following link: https://drive.google.com/file/d/1wdm8wk-2tciOHbFXs0gKDYecDItVK1fy/view?usp=sharing
 
 ## License
 This project is licensed under the MIT License, which allows you to freely use, modify, and distribute this software, provided proper attribution is given.
