@@ -35,37 +35,30 @@ To start the application, run the following command: npm run start
 
 You will be prompted with options to create a new vehicle or select an existing one, and to choose between a car, truck, or motorbike.
 
-Creating a Car
-The following prompts will appear when creating a car:
+The following prompts will appear when creating a vehicle:
 - Enter Color
 - Enter Make
 - Enter Model
 - Enter Year
 - Enter Weight
 - Enter Top Speed
+- Enter Front Wheel Diameter (Truck and Motorbike only)
+- Enter Front Wheel Brand (Truck and Motorbike only)
+- Enter Rear Wheel Diameter (Truck and Motorbike only)
+- Enter Rear Wheel Brand (Truck and Motorbike only)
+- Once you create a vehicle, you will also be prompted with options to select an existing one and perform an action.
 
-Creating a Truck
-When creating a truck, these prompts will appear:
-- Enter Color
-- Enter Make
-- Enter Model
-- Enter Year
+The following prompts will appear when selecting an existing vehicle:
+- Start Vehicle
+- Accelerate 5 MPH
+- Decelerate 5 MPH
+- Stop  Vehicle
 - Enter Weight
-- Enter Top Speed
-- Enter Towing Capacity
-- Enter Front Wheel Diameter
-- Enter Front Wheel Brand
-- Enter Rear Wheel Diameter
-- Enter Rear Wheel Brand
-
-Creating a Motorbike
-For a motorbike, these prompts will appear:
-- Enter Color
-- Enter Make
-- Enter Model
-- Enter Year
-- Enter Weight
-- Enter Top Speed
+- Turn Right
+- Turn Left
+- Reverse
+- Tow a vehicle (Can only be performed by a truck, another vehicle besides the truck has to have been created)
+- Perform a wheelie (Can only be performed by a Motorbike)
 
 ## Walkthrough
 A complete walkthrough video demonstrating the application, its functionality, and the process of invoking it from the command line can be found at the following link: https://drive.google.com/file/d/1wdm8wk-2tciOHbFXs0gKDYecDItVK1fy/view?usp=sharing
