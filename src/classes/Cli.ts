@@ -424,7 +424,7 @@ class Cli {
           }
         }
         // Add statements to perform the tow action only if the selected vehicle is a truck.
-        else if (answers.action === 'Tow vehicle') {
+        else if (answers.action === 'Tow a vehicle') {
           for (let i = 0; i < this.vehicles.length; i++) {
               if (this.vehicles[i].vin === this.selectedVehicleVin) {
                   if (this.vehicles[i] instanceof Truck) {
@@ -440,7 +440,7 @@ class Cli {
       }
       
       // Add statements to perform the wheelie action only if the selected vehicle is a motorbike
-      else if (answers.action === 'Perform wheelie') {
+      else if (answers.action === 'Perform a wheelie') {
           for (let i = 0; i < this.vehicles.length; i++) {
               if (this.vehicles[i].vin === this.selectedVehicleVin) {
                   if (this.vehicles[i] instanceof Motorbike) {

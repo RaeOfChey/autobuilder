@@ -13,7 +13,7 @@ class Motorbike extends Vehicle {
   topSpeed: number;
   wheels: Wheel[];
 
-  // TCreate a constructor that accepts the properties of the Motorbike class
+  // Create a constructor that accepts the properties of the Motorbike class
   constructor(
       vin: string,
       color: string,
