@@ -25,7 +25,7 @@ Auto Builder is a command-line application that enables users to create and mana
 ## Installation
 To use the application, follow these steps:
 
-1. Clone the repository: git clone https://github.com/your-username/auto-builder.git
+1. Clone the repository
 2. Navigate to the project directory: cd auto-builder
 3. Install the necessary dependencies: npm install
 4. Compile the TypeScript code: npx tsc
