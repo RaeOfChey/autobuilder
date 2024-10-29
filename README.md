@@ -25,13 +25,13 @@ Auto Builder is a command-line application that enables users to create and mana
 ## Installation
 To use the application, follow these steps:
 
-1. Clone the repository
-2. Navigate to the project directory: cd auto-builder
-3. Install the necessary dependencies: npm install
-4. Compile the TypeScript code: npx tsc
+- Step 1. Clone the repository
+- Step 2. Navigate to the project directory: cd auto-builder
+- Step 3. Install the necessary dependencies: npm install
+- Step 4. Compile the TypeScript code: npx tsc
 
 ## Usage
-To start the application, run the following command: npm run start
+To start the application, run the following command: `npm run start`
 
 You will be prompted with options to create a new vehicle or select an existing one, and to choose between a car, truck, or motorbike.
 
@@ -77,8 +77,6 @@ Contributions are welcome!  If you'd like to contribute to this project, follow 
 
 ## Tests
 Currently, this project does not have any automated tests. However, if you'd like to add tests, feel free to contribute! You can set up testing using a framework like Mocha or Jest.
-
-To run any test files in the future, use: npm test
 
 ## Questions
 If you have any questions about the repository, feel free to reach out by opening an issue or contacting me directly at cheyennaraelynn@gmail.com You can also find more of my work on GitHu at https://github.com/RaeOfChey.
